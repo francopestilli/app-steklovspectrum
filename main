@@ -3,6 +3,8 @@
 #PBS -l nodes=1:ppn=8
 #PBS -l walltime=01:00:00
 
+module load singularity
+
 param=$(jq -q .param config.json)
 time singularity exec /N/u/brlife/Carbonate/steklov-py2-2017-10-19-78cd14f43d8b.img -param $param
 
