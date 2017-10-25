@@ -5,10 +5,10 @@
 
 module load singularity
 
-#param=$(jq -r .param config.json)
-#time singularity exec /N/u/brlife/Carbonate/steklov-py2-2017-10-19-78cd14f43d8b.img -param $param
-#time singularity run /N/u/brlife/Carbonate/steklov-py2-2017-10-19-7caf15d2f5fb.img
-time singularity run /N/u/brlife/Carbonate/steklov-py2-2017-10-23-7c5e6fddeda0.img
+
+
+#time singularity run /N/u/brlife/Carbonate/steklov-py2-2017-10-23-7c5e6fddeda0.img
+time singularity run /N/u/brlife/Carbonate/steklov-py2-2017-10-25-ab26d6e2a794.img
 if [ ! -s spectrum.json ];
 then
 	echo "spectrum.json missing"
